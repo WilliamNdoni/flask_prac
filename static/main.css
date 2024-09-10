@@ -1,0 +1,187 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('images/hashiras.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    color: #2a6f9c;
+    margin: 1rem 0;
+}
+
+a {
+    color: #2a6f9c;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+nav {
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav h1 {
+    flex: auto;
+    margin: 0;
+}
+
+nav h1 a {
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    color: #2a6f9c;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a, nav ul li span, header .action {
+    display: block;
+    padding: 0.5rem;
+    color: #2a6f9c;
+}
+
+.content {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.content > header {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+}
+
+.content > header h1 {
+    flex: auto;
+    margin: 0;
+}
+
+.flash {
+    margin: 1em 0;
+    padding: 1em;
+    background: #e3f2fd;
+    border: 1px solid #81d4fa;
+    border-radius: 5px;
+}
+
+.post > header {
+    display: flex;
+    align-items: flex-end;
+    font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5em;
+}
+
+.post > header > div:first-of-type {
+    flex: auto;
+}
+
+.post > header h1 {
+    font-size: 1.6em;
+    margin-bottom: 0;
+}
+
+.post .about {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.post .body {
+    white-space: pre-line;
+    line-height: 1.6;
+}
+
+.content:last-child {
+    margin-bottom: 0;
+}
+
+.content form {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.content input, .content textarea {
+    margin-bottom: 1em;
+    padding: 0.75em; /* Increased padding for better input areas */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.content textarea {
+    min-height: 12em;
+    resize: vertical;
+}
+
+input.danger {
+    color: #e74c3c;
+}
+
+input[type=submit] {
+    align-self: center;
+    min-width: 12em; /* Increased minimum width */
+    padding: 0.75em; /* Increased padding */
+    background: #2a6f9c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
+    background: #1e4e75;
+}
+
+.register-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem; /* Increased padding */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    max-width: 800px; /* Increased max-width */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
